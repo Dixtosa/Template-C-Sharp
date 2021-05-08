@@ -7,8 +7,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        //var cin = new Scanner(new StreamReader(Console.OpenStandardInput()));
-        var cin = new Scanner(new StreamReader("input.txt"));
+        var cin = new Scanner(new StreamReader(Console.OpenStandardInput()));
+        cin = new Scanner(new StreamReader("input.txt"));
         Action<dynamic> cout = (s) => Console.Write(s);
         Action<dynamic> coutline = (s) => Console.WriteLine(s);
         Console.SetOut(new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = false });
